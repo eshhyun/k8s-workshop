@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: hello-pod
+  labels: 
+    app: hello
+spec: 
+  containers: 
+  - name: hello-container
+    image: eshhyun/hello
+    ports:
+    - containerPort: 8000
+    
